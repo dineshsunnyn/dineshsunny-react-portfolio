@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Portfolio.css";
 
 import Menu from "./Menu";
-import { RiGithubLine, RiLink } from "react-icons/ri";
+import { RiGithubLine } from "react-icons/ri";
 
 import { motion } from "framer-motion";
 
@@ -41,7 +41,7 @@ const Portfolio = () => {
 
 			<div className="portfolio__container grid">
 				{items.map((elem) => {
-					const { id, image, title, category, url, repositoryUrl,description,techstack } = elem;
+					const { id, image, title, category, repositoryUrl,description,techstack } = elem;
 
 					return (
 						<motion.div
