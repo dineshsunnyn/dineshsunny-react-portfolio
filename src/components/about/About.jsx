@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import Image from '../../assets/avatar-2.svg';
+import Image from '../../assets/big-logo.svg';
 import Resume from '../../assets/resume.pdf';
 import AboutBox from './AboutBox';
 
@@ -20,20 +20,21 @@ const About = () => {
                 <div className="about__data grid">
                     <div className="about__info">
                         <p className="about__description">
-                            Hello! I'm Greg, and I'm based in Johannesburg, South Africa. I studied at Varisty College Sandton, where I completed my diploma in Software Development.<br /><br />
-                            Fastforward to today, and I can honestly say it's been a beautiful journery and I hope to grow even further as Software Engineer. My current focus these days
-                            is on expanidng my portfolio by building more projects that I can add on here, as well as being a great team player at my current role.<br /><br />
-                            Here are a few technologies I’ve been working with recently:
+                                 I’m Dinesh Sunny Narsinga, a passionate and curious software developer who loves turning ideas into clean, functional code. I thrive at the intersection of problem-solving and creativity.<br></br><br></br>
+
+With a strong foundation in computer science and a continuous learner mindset, I enjoy breaking down complex challenges and finding smart, scalable solutions. I believe that great engineering is about more than just writing code—it's about understanding people, improving processes, and staying adaptable.
+<br></br><br></br>
+When I'm not coding or studying, I’m probably setting new learning goals, exploring tech communities, or mapping out my next adventure—both in code and in life.<br></br><br></br>
                         </p>
-                        <ul className="about__list">
+                        {/* <ul className="about__list">
                             <li>JavaScript (ES6+)</li>
                             <li>TypeScript</li>
                             <li>React</li>
                             <li>Node.js</li>
                             <li>Postgres SQL</li>
                             <li>NestJS</li>
-                        </ul>
-                        <button className="btn" onClick={downloadResume}>Donwload CV</button>
+                        </ul> */}
+                        <button className="btn" onClick={downloadResume}>Download Resume</button>
                     </div>
 
                     {/* <div className="about__skills grid">

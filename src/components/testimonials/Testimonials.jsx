@@ -1,7 +1,9 @@
 import React from 'react';
 import './Testimonials.css';
-import Image3 from '../../assets/avatar-3.svg'
-import Image4 from '../../assets/avatar-4.svg'
+
+import Image2 from '../../assets/reebu.svg'
+import Image3 from '../../assets/professor.svg'
+import Image4 from '../../assets/sumith.svg'
 
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,22 +16,31 @@ const Testimonials = () => {
 	const data = [
 		{
 			id: 1,
-			image: Image4,
-			title: "Kerren Ortlepp",
-			subtitle: "Founder @ Entrostat",
-			comment: "Greg worked at Entrostat as a full-stack developer. He was excellent and had a real eye for design. If there was ever a time where we had a complicated frontend or needed to know what the best CSS approach was for something - Greg was our goto man!",
+			image: Image2,
+			title: "Reebu Mukherjee",
+			subtitle: "Software Engineer @ BestDoc",
+			comment: "I worked at Bestdoc with Dinesh. He was really smart in coming up with solutions on his own. He showed good knowledge in DB design and SQL. He was comfortable in solving problems in Java and spring boot.",
 		},
 		{
 			id: 2,
 			image: Image3,
-			title: "Thapelo Kekana",
-			subtitle: "Frontend Developer @ FNB",
-			comment: "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍",
+			title: "Dr. Khomsun Singhirunnusorn",
+			subtitle: "Professor @ University of Central Missouri",
+			comment: "Dinesh performed leading, and hard working to achieve the excellent database application project. He also friendly and has good communication skills.",
 		},
+		{
+			id: 3,
+			image: Image4,
+			title: "Sumith KK",
+			subtitle: "Frontend Developer @ BestDoc",
+			comment: "I have worked with him around 2 years. He is Excellent in backend technologies ",
+		},
+		
+		
 	];
 
 	return (
-		<section className="testimonials container section">
+		<section className="testimonials container section" id="testimonials">
 
 			<h2 className="section__title">Testimonials</h2>
 

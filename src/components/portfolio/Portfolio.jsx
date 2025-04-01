@@ -18,30 +18,30 @@ const Portfolio = () => {
 	};
 
 	return (
-		<section className="portfolio container section" id="portfolio">
+		<section className="portfolio container section" id="projects">
 			<h2 className="section__title">Recent Projects</h2>
 
 			<div className="portfolio__filters">
 				<span className={activeFilter === 0 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { setItems(Menu); setActiveFilter(0) }}>
 					All
 				</span>
-				<span className={activeFilter === 1 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("Frontend"); setActiveFilter(1) }}>
-					Frontend
+				<span className={activeFilter === 1 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("Web Development"); setActiveFilter(1) }}>
+					Web Development
 				</span>
-				<span className={activeFilter === 2 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("Backend"); setActiveFilter(2) }}>
-					Backend
+				<span className={activeFilter === 2 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("Machine Learning & AI"); setActiveFilter(2) }}>
+					Machine Learning & AI
 				</span>
-				<span className={activeFilter === 3 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("Angular"); setActiveFilter(3) }}>
-					Angular
+				<span className={activeFilter === 3 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("Operating Systems"); setActiveFilter(3) }}>
+					Operating Systems
 				</span>
-				<span className={activeFilter === 4 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("React"); setActiveFilter(4) }}>
+				{/* <span className={activeFilter === 4 ? 'portfolio__item portfolio__item-active' : 'portfolio__item'} onClick={() => { filterItems("React"); setActiveFilter(4) }}>
 					React
-				</span>
+				</span> */}
 			</div>
 
 			<div className="portfolio__container grid">
 				{items.map((elem) => {
-					const { id, image, title, category, url, repositoryUrl } = elem;
+					const { id, image, title, category, url, repositoryUrl,description,techstack } = elem;
 
 					return (
 						<motion.div
@@ -59,9 +59,16 @@ const Portfolio = () => {
 
 							<span className="portfolio__category">{category.join(', ')}</span>
 							<h3 className="portfolio__title">{title}</h3>
-							<a href={url} target="_blank" rel="noreferrer" className="portfolio__button">
+							<p className="portfolio__desc">{description}</p>
+							<div className="portfolio__techstack">
+									{techstack.map((tech, index) => (
+								<span className="portfolio__chip" key={index}>{tech}</span>
+							))}
+							</div>
+
+							{/* <a href={url} target="_blank" rel="noreferrer" className="portfolio__button">
 								<RiLink className="portfolio__button-icon" />
-							</a>
+							</a> */}
 							<a href={repositoryUrl} target="_blank" rel="noreferrer" className="portfolio__github-button">
 								<RiGithubLine className="portfolio__button-icon" />
 							</a>

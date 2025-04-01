@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import Logo from "../../assets/logo.svg";
-import LightLogo from "../../assets/light-logo.svg";
+import LightLogo from "../../assets/letter-d.svg";
 
 import {
     RiHome2Line,
@@ -14,6 +14,7 @@ import {
     RiMoonLine,
     RiSunLine,
     RiMenu2Line,
+    RiLightbulbLine
 } from "react-icons/ri";
 
 
@@ -43,25 +44,31 @@ const Sidebar = (props) => {
                             </li>
 
                             <li className="nav__item">
-                                <a href="#services" className="nav__link">
+                                <a href="#testimonials" className="nav__link">
                                     <RiFileList3Line />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#resume" className="nav__link">
+                                <a href="#skills" className="nav__link">
+                                    < RiLightbulbLine />
+                                </a>
+                            </li>
+
+                            <li className="nav__item">
+                                <a href="#experience" className="nav__link">
                                     <RiBriefcase2Line />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#portfolio" className="nav__link">
+                                <a href="#projects" className="nav__link">
                                     <RiStackLine />
                                 </a>
                             </li>
 
                             <li className="nav__item">
-                                <a href="#blog" className="nav__link">
+                                <a href="#education" className="nav__link">
                                     <RiDraftLine />
                                 </a>
                             </li>

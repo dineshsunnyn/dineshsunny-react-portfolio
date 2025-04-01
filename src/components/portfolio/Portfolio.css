@@ -73,10 +73,57 @@
   margin: 0 0 0.98rem;
   padding: 0 1.25rem;
   position: absolute;
-  top: 3.75rem;
+  top: 2.05rem;
   transform: translateY(30px);
   transition: 0.3s;
   opacity: 0;
+}
+
+.portfolio__card:hover .portfolio__desc {
+  opacity: 1;
+  transform: translateY(60px);
+  /* Slightly below the title */
+}
+
+.portfolio__desc {
+  color: #fff;
+  font-size: var(--small-font-size);
+  padding: 0 1.25rem;
+  position: absolute;
+  top: 0.3rem;
+  transform: translateY(30px);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.portfolio__desc {
+  line-height: 1.4;
+}
+
+.portfolio__techstack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0 1.25rem;
+  position: absolute;
+  top: 5.5rem;
+  transform: translateY(30px);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.portfolio__card:hover .portfolio__techstack {
+  opacity: 1;
+  transform: translateY(80px);
+}
+
+.portfolio__chip {
+  background-color: rgba(255, 209, 92, 0.15);
+  border: 1px solid #ffd15c;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
 }
 
 .portfolio__button {
@@ -100,8 +147,8 @@
 .portfolio__github-button {
   color: #fff;
   position: absolute;
-  bottom: 1.5rem;
-  left: 4.5rem;
+  bottom: 0.5rem;
+  left: 17.5rem;
   font-size: var(--h3-font-size);
   display: block;
   background-color: #ffd15c;

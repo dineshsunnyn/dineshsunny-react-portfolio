@@ -1,66 +1,38 @@
 const WorkExperience = [
     {
         id: 1,
-        title: "Software Engineer",
-        company: "Kurtosys",
-        yearsActive: "January 2022 - Present",
+        title: "Software Engineer - Volunteer",
+        company: "American Intiative Technology Inc.",
+        yearsActive: "January 2025 - Present",
         information: [
-            "Write modern, performant, maintainable code for a diverse array of internal projects",
-            "Communicate with multi-disciplinary teams of engineers, team leads, and QA Engineers on a daily basis",
+            "Integrated PostgreSQL and MySQL databases to manage employee data securely, applying security best practices and compliance measures to ensure data integrity and privacy.",
+            "Collaborated with cross-functional teams, including designers and product managers, to gather requirements, define technical specifications, and ensure the timely and successful delivery of the Employee Portal Application.",
         ],
     },
     {
         id: 2,
-        title: "Junior Software Developer",
-        company: "Entrostat",
-        yearsActive: "May 2017 - December 2021",
+        title: "Software Engineer",
+        company: "Web Development, UCM",
+        yearsActive: "April 2023 - April 2024",
         information: [
-            "Improved and optimized the company's website for a seamless customer experience",
-            "Created, communicated, and managed project plans & project timelines",
-            "Worked to continually meet the expectation of our clients",
+            "Developed full-stack web application for event management using MERN stack, handling 1000+ users.",
+            "Spearheaded frontend UI development by improving overall user experience and interface usability.",
+            "Optimized application performance using caching and lazy loading, reducing load time by 50%."
         ],
     },
     {
         id: 3,
-        title: "Junior Software Developer",
-        company: "Empire State",
-        yearsActive: "Feburary 2016 - April 2017",
+        title: "Software Engineer",
+        company: "BestDoc Technology Private Limited",
+        yearsActive: "July 2021 - November 2022",
         information: [
-            "Planned, developed, tested, deployed, and maintained web applications and mobile applications",
-            "Worked well independently and on a team to solve problems."
+            "Integrated over 200+ hospitals into the BestDoc Survey platform, including 30+ from the UAE, by configuring custom solutions that improved platform efficiency and reduced downtime",
+            "Added multilingual support in Vue.js and built backend services with Spring Boot, leading to improved user engagement and a more stable, scalable platform",
+            "Migrated the analytics database from PostgreSQL to MongoDB, improving scalability and performance while significantly reducing operational costs",
+            "Enhanced CI/CD pipelines with automated testing and AWS deployments, while leading incident triage to address major issues and improve system reliability"
         ],
     },
-    {
-        id: 4,
-        title: "Software Development Intern",
-        company: "The Digital Academy",
-        yearsActive: "Novembe 2015 - January 2016",
-        information: [
-            "Served as a dedicated and supportive Intern in a fast-paced environment",
-            "Worked to solve complex problems using the latest in Mobile and Web Technologies.",
-        ],
-    },
-    {
-        id: 5,
-        title: "IT Support Assistant",
-        company: "Varsity College",
-        yearsActive: "February 2015 - May 2015",
-        information: [
-            "Worked to support the senior support staff with day-to-day tasks.",
-            "Assisted with the evaluation and troubleshooting of hardware and software issues.",
-            "Maintaining computer Inventory & surplus equipment."
-        ],
-    },
-    {
-        id: 6,
-        title: "Student Ambassador",
-        company: "Varsity College",
-        yearsActive: "December 2014 - February 2015",
-        information: [
-            "Monitored registration for all prospective student",
-            "Assisted parents and prospective student with necessary registration details",
-        ],
-    },
+    
 ];
 
 export default WorkExperience;

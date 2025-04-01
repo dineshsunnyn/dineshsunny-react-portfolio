@@ -22,19 +22,20 @@ function App() {
     }
 
     return (
-        <div className="app" data-theme={theme}>
-            <Sidebar theme={theme} switchTheme={switchTheme} />
-            <main className='main'>
-                <Home />
-                <About />
-                <Services />
-                <Resume />
-                <Portfolio />
-                <Testimonials />
-                <Blog />
-                <Contact theme={theme} />
-            </main>
-        </div>
+      <div className="app" data-theme={theme}>
+        <Sidebar theme={theme} switchTheme={switchTheme} />
+        <main className="main">
+          <Home />
+          <About />
+          <Testimonials />
+          <Blog />
+          <Resume />
+          <Portfolio />
+          <Services />
+
+          <Contact theme={theme} />
+        </main>
+      </div>
     );
 }
 
