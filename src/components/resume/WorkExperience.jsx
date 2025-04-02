@@ -1,7 +1,7 @@
 const WorkExperience = [
     {
         id: 1,
-        title: "Software Engineer - Volunteer",
+        title: "Software Engineer",
         company: "American Intiative Technology Inc.",
         yearsActive: "January 2025 - Present",
         information: [
