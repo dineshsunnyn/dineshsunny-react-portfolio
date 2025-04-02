@@ -12,7 +12,7 @@ const WorkExperience = [
     {
         id: 2,
         title: "Software Engineer",
-        company: "Web Development, UCM",
+        company: "Web Development Club, UCM",
         yearsActive: "April 2023 - April 2024",
         information: [
             "Developed full-stack web application for event management using MERN stack, handling 1000+ users.",
