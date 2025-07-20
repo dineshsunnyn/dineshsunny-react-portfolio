@@ -13,7 +13,7 @@ const WorkExperience = [
         id: 2,
         title: "Software Engineer",
         company: "Web Development Club, UCM",
-        yearsActive: "April 2023 - April 2024",
+        yearsActive: "April 2023 - May 2024",
         information: [
             "Developed full-stack web application for event management using MERN stack, handling 1000+ users.",
             "Spearheaded frontend UI development by improving overall user experience and interface usability.",
